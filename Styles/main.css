@@ -1,0 +1,315 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;  
+  color: #333; 
+  line-height: 1.6; 
+}
+
+header {
+  background-color: #1a202c;  
+  padding: 15px 0;
+}
+
+.navbar-brand h1 {
+  font-family: 'Verdana', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 1rem;
+  color: #fff;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #ff7f50;  
+}
+
+/* Image de profil */
+.maphoto {
+  max-width: 160px;
+  border: 4px solid #ff7f50;  
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.maphoto:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);  
+}
+
+.intro {
+  background-color: #fff;
+  padding: 50px 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.intro h1 {
+  font-size: 2.8rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #666;  
+  margin-bottom: 20px;
+}
+
+.intro .btn {
+  background-color: #ff7f50;  
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+  background-color: #e67e22;  
+}
+
+
+/* NavLink */
+.navbar-nav .nav-item.active .nav-link {
+  color: #ff7f50;  
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff7f50;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Verdana', sans-serif;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Boutons principaux */
+.btn {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e67e22;  
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);  
+}
+
+header .nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+header .nav-link:hover {
+  color: #ff7f50; 
+}
+
+.logo h1 {
+  font-family: Verdana, sans-serif;
+  color: #ff7f50;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Animation du bouton de téléchargement */
+a.btn {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background-color: #ff7f50;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.btn:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* Pour les petits écrans (responsive design) */
+@media (max-width: 768px) {
+  .intro h1 {
+      font-size: 2rem;
+  }
+  .intro .lead {
+      font-size: 1rem;
+  }
+  .intro .btn {
+      padding: 10px 20px;
+  }
+  .navbar-brand h1 {
+      font-size: 1.5rem;
+  }
+}
+
+
+
+
+
+
+
+/* Icônes des compétences */
+.row .text-center i {
+  margin-bottom: 5px;
+}
+
+
+/* Animation pour les éléments qui apparaissent avec l'animation fadeInUp */
+.animate__fadeInUp {
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+/* Animation pour zoomer les éléments au survol */
+.animate__zoomIn {
+  animation-duration: 0.5s;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #1a202c; 
+  color: #fff; 
+  padding: 30px 0; 
+  font-size: 1rem;
+}
+
+footer h5 {
+  color: #ff7f50; 
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #ccc; 
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ff7f50; 
+}
+
+footer .d-flex a {
+  color: #fff; 
+  transition: color 0.3s ease, transform 0.3s ease;
+  margin-right: 3px;
+}
+
+footer .d-flex a:hover {
+  color: #ff7f50; 
+  transform: scale(1.1); 
+}
+
+footer hr {
+  border-color: rgba(255, 255, 255, 0.1); 
+  margin: 20px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #ccc; 
+}
+
+
+
+
+/* Responsive pour le footer */
+@media (max-width: 768px) {
+  footer {
+      text-align: center;
+  }
+
+  footer .text-md-start {
+      text-align: center !important;
+  }
+
+  footer .text-md-end {
+      text-align: center !important;
+      margin-top: 20px;
+  }
+
+  footer .d-flex {
+      justify-content: center !important;
+  }
+}
+
+
+
+

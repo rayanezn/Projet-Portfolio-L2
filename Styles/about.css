@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+main.container {
+  padding: 40px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2, h3 {
+  color: #2c3e50; 
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555; 
+  margin-bottom: 15px;
+}
+
+strong {
+  color: #27ae60; 
+}
+
+.about-intro {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.about-intro h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.experience ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience li {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.experience li strong {
+  color: #2c3e50; 
+}
+
+.experience li p {
+  color: #555; 
+}
+
+/* Education Section */
+.education ul {
+  list-style: none;
+  padding: 0;
+}
+
+.education li {
+  margin-bottom: 20px;
+}
+
+.education li strong {
+  color: #27ae60; 
+}
+
+.education li p {
+  color: #555;
+}
+
+.education li p strong {
+  color: #2c3e50;
+}
+
+/* Interests Section */
+.interests ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.interests li {
+  background-color: #fff;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.interests li:hover {
+  background-color: #ecf0f1; 
+}
+
+footer p {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2, h3 {
+      font-size: 1.7rem;
+  }
+
+  p, .interests li {
+      font-size: 1rem;
+  }
+
+  .about-intro {
+      padding: 20px;
+  }
+}
+/* Ajout d'une animation pour les éléments visibles */
+.about-intro, .experience, .education, .interests {
+  opacity: 0; /* Commence avec une opacité nulle */
+  transform: translateY(50px); /* Décale les éléments vers le bas */
+  transition: opacity 1s ease, transform 1s ease; /* Animation de l'opacité et du mouvement */
+}
+
+/* Lorsque l'élément devient visible, il s'affiche en douceur */
+.about-intro.visible, .experience.visible, .education.visible, .interests.visible {
+  opacity: 1;
+  transform: translateY(0); /* Réinitialise la position */
+}
+

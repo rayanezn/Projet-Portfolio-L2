@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personnel - Découvrez mes projets, compétences et informations de contact.">
+    <title>Projets - Rayane Zane</title>
+    <!-- Lien vers le fichier CSS principal -->
+    <link rel="stylesheet" href="Styles/main.css">
+    <!-- Lien vers le fichier CSS des projets -->
+    <link rel="stylesheet" href="Styles/projects.css">
+    <!-- Icônes (ex. FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark container">
+            <a class="navbar-brand" href="index.html">
+                <h1>Rayane Zane</h1>
+            </a>
+            
+            <!-- Bouton Burger pour petits écrans -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Liens du menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Projets -->
+    <section id="projets" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-primary mb-4">Mes Projets</h2>
+
+            <!-- Filtrage des projets -->
+            <div class="text-center mb-4">
+                <button class="btn btn-secondary filter-btn active" data-filter="all">Tous</button>
+                <button class="btn btn-secondary filter-btn" data-filter="data-science">Data Science</button>
+                <button class="btn btn-secondary filter-btn" data-filter="simulation">Programmation C</button>
+                <button class="btn btn-secondary filter-btn" data-filter="web">Web</button>
+            </div>
+
+            <div class="row">
+                <!-- Projet 1 : Data Science -->
+                <div class="col-md-4">
+                    <div class="card" data-category="data-science">
+                        <img src="assets/images/téléchargement.png" class="card-img-top" alt="Projet 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet 1 : Prédiction des émissions de CO2</h5>
+                            <p class="card-text">
+                                Réalisation d'un projet collectif visant à prédire la qualité des émissions de 
+                                <strong>CO₂</strong> issues de la production d'électricité, dans le cadre du module de 
+                                <strong>ARE Data Science</strong>. Utilisation de <strong>Jupyter Notebook</strong> avec les 
+                                bibliothèques <strong>NumPy</strong>, <strong>Pandas</strong> et <strong>Matplotlib</strong> pour 
+                                manipuler et visualiser les données, ainsi que des algorithmes tels que le classifieur 
+                                <strong>naïf de Bayes</strong> et les <strong>k-NN</strong>. Mon rôle principal consistait à 
+                                analyser le problème en groupe, puis à développer et implémenter le code en 
+                                <strong>Python</strong>, assurant la précision et la cohérence des prédictions.<br>
+                                <strong>Date : Février-Avril 2024</strong>
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="assets/Présentation_ARE.pdf" class="btn btn-success" download>Télécharger la présentation</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : C Programming -->
+                <div class="col-md-4">
+                    <div class="card" data-category="simulation">
+                        <img src="assets/images/C_Programming_Language.svg.png" class="card-img-top" alt="Projet 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet 2 : Simulateur d'Écosystème en C</h5>
+                            <p class="card-text">
+                                Réalisation en binôme d'un <strong>simulateur d'écosystème en C</strong>, intégrant 
+                                <strong>proies</strong>, <strong>prédateurs</strong> et <strong>végétation</strong>, avec gestion des 
+                                interactions telles que <strong>déplacement</strong>, <strong>reproduction</strong> et 
+                                <strong>prédation</strong>. Utilisation de structures de données 
+                                (<strong>tableaux dynamiques</strong>, <strong>listes chaînées</strong>), optimisation de la mémoire 
+                                via <strong>Valgrind</strong> et lécture/écriture dans des <strong>fichiers</strong>. Automatisation des processus avec un <strong>Makefile</strong> et validation 
+                                des fonctionnalités à l'aide de <strong>tests unitaires</strong>. Ce projet reflète une 
+                                <strong>collaboration efficace</strong> et met en pratique des concepts avancés de programmation 
+                                en <strong>C</strong> et de modélisation algorithmique.<br>
+                                <strong>Date : Novembre 2024</strong>
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/rayanezn/mini-projet-C" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#simulationModal">Voir la simulation</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- la vidéo -->
+                <div class="modal fade" id="simulationModal" tabindex="-1" aria-labelledby="simulationModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="simulationModalLabel">Simulation d'Écosystème</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Vidéo responsive -->
+                                <div class="ratio ratio-16x9">
+                                    <video controls>
+                                        <source src="assets/videos/video_2024-12-02_02-08-34.mp4" type="video/mp4">
+                                        Votre navigateur ne supporte pas la lecture des vidéos.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Projet 3 : Site Web -->
+                <div class="col-md-4">
+                    <div class="card" data-category="web">
+                        <img src="assets/images/Bootstrap_logo.svg.png" class="card-img-top" alt="Projet 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Projet 3 : Site de déménagement moderne "Move It"</h5>
+                            <p class="card-text">
+                                Ce projet personnel est un <strong>site web</strong> conçu exclusivement avec <strong>Bootstrap</strong>, 
+                                sans l'utilisation de <strong>CSS personnalisé</strong> ou de frameworks additionnels. 
+                                L'objectif principal était de démontrer comment <strong>Bootstrap</strong> peut être utilisé 
+                                pour créer un site à la fois <strong>esthétique</strong>, <strong>fonctionnel</strong> et 
+                                <strong>entièrement réactif</strong>.<br>
+                                <strong>Date : Octobre 2024</strong>
+                            </p>
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/rayanezn/Site-en-utilisant-les-composants-de-bootstrap" class="btn btn-primary" target="_blank">Voir sur GitHub</a>
+                                <a href="https://rayanezn.github.io/Site-en-utilisant-les-composants-de-bootstrap/" class="btn btn-success" target="_blank">Voir le site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Liens rapides -->
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <h5>Liens rapides</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Accueil</a></li>
+                        <li><a href="skills.html" class="text-white text-decoration-none">Compétences</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none">À propos</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Icônes sociales -->
+                <div class="col-md-6 text-center text-md-end">
+                    <h5>Suivez-moi</h5>
+                    <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                        <a href="https://github.com/rayanezn" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/rayane-zane-8ab069286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com/rayane.zane" target="_blank" class="text-white text-decoration-none">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3 border-light">
+            <p class="text-center mb-0">&copy; 2024 Rayane Zane. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Lien vers le fichier JavaScript principal -->
+    <script src="scripts/main.js"></script>
+    <!-- Lien vers le fichier JavaScript des projets -->
+    <script src="scripts/projects.js"></script>
+    <!-- Script Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
