@@ -22,7 +22,7 @@ Il présente mes projets, mes compétences, ainsi que mes informations de contac
 Pour visualiser le portfolio, il suffit d’ouvrir le fichier `index.html` dans un navigateur web.
 
 ## Auteurs
-- Rayane Zane – Étudiant en informatique à Sorbonne Université
+- Rayane Zane – Étudiant en L3 informatique à Sorbonne Université
 
 ## Liens utiles
 - [GitHub](https://github.com/rayanezn)
