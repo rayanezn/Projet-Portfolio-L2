@@ -25,7 +25,5 @@ Pour visualiser le portfolio, il suffit d’ouvrir le fichier `index.html` dans 
 - Rayane Zane – Étudiant en informatique à Sorbonne Université
 
 ## Liens utiles
-- [Télécharger le CV](assets/CV_2026-02-14_Rayane_Zane.pdf)
 - [GitHub](https://github.com/rayanezn)
 - [LinkedIn](https://www.linkedin.com/in/rayane-zane-8ab069286)
-- [Instagram](https://instagram.com/rayane.zane)
